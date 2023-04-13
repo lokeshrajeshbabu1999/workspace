@@ -1,9 +1,9 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  User-api
+  aero-app
 
-  Sample SAM Template for User-api
+  Sample SAM Template for aero-app
   
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
@@ -19,7 +19,7 @@ Resources:
     Properties:
       CodeUri: hello-world/
       Handler: app.lambdaHandler
-      Runtime: nodejs12.x
+      Runtime: nodejs14.x
       Architectures:
         - x86_64
       Events:
